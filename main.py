@@ -1,4 +1,4 @@
-from board_utils import print_board, is_goal
+from board_utils import print_board
 from solver import solver
 from board_gen import puzzle_board, full_board
 import time
