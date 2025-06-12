@@ -18,7 +18,7 @@ def solver(initial_board):
     f = 0
     heapq.heappush(board_set, (f, initial_board))
     while board_set:
-        curr_f, curr_board = heapq.heappop(board_set)
+        _, curr_board = heapq.heappop(board_set)
 
         if is_goal(curr_board):
             return curr_board
