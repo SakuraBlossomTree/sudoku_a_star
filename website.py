@@ -1,9 +1,10 @@
 from selenium import webdriver
 import time
-from solver import solver
+# from solver import solver
+from a_star_solver import solver_A_star as solver
 
 driver = webdriver.Chrome()
-driver.get("https://nine.websudoku.com/")
+driver.get("https://nine.websudoku.com/?level=4")
 
 stop_time = time.sleep(1)
 

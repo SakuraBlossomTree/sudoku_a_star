@@ -1,5 +1,6 @@
 from board_utils import print_board
-from solver import solver
+# from solver import solver
+from a_star_solver import solver_A_star as solver
 from board_gen import puzzle_board, full_board
 import time
 
