@@ -3,6 +3,7 @@ from board_utils import print_board
 from a_star_solver import solver_A_star as solver
 from board_gen import puzzle_board, full_board
 import time
+from backtracking import backtrack
 
 # board = [
 #     [ 0, 3, 4, 0 ],
@@ -16,7 +17,7 @@ print("Initial Board")
 print_board(board)
 print("------------------------")
 print("Solved Board")
-print_board(solver(board))
+print_board(backtrack(board))
 end = time.time()
 print("Solved in:", end - start, "seconds")
 print("\nSolution:")

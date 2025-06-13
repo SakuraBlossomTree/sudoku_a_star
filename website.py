@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 # from solver import solver
 from a_star_solver import solver_A_star as solver
+from backtracking import solve
 
 driver = webdriver.Chrome()
 driver.get("https://nine.websudoku.com/?level=4")
@@ -26,7 +27,7 @@ while True:
 
     print("Board obtained, solving...")
 
-    solved_board = solver(board)
+    solved_board = solve(board)
 
     print("Board solved, updating the website...")
     
